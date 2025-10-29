@@ -1,18 +1,19 @@
-import time
-import sys
+import time  # For timing
+import sys   # For memory usage
 
-def listfun1(x_values, b_values):
-    results = []
+# Updated function
+def listfun2a(x_values, b_values):
+    results = []  # Initialize the 2D list to store results
     for b in b_values:   
-        row = []
+        row = []  # Initialize a new row for each value of b
         for x in x_values:
-            y = x ** b
-            row.append(y)
-        results.append(row)
+            y = x ** b  # Calculate x^b
+            row.append(y)  # Append the calculated value to the row
+        results.append(row)  # Append the row to the results
     return results
 
 if __name__ == "__main__":
-    x_values = list(range(10))
+    x_values = list(range(1000))
     b_values = [1, 2, 3]
 
     execution_times = []
@@ -20,7 +21,7 @@ if __name__ == "__main__":
 
     for _ in range(5):  # Run the code 5 times
         start_time = time.time()
-        results = listfun1(x_values, b_values)
+        results = listfun2a(x_values, b_values)
         end_time = time.time()
 
         execution_time_ms = (end_time - start_time) * 1000

@@ -1,16 +1,3 @@
-import time
-import sys
-
-def listfun1(x_values, b_values):
-    results = []
-    for b in b_values:   
-        row = []
-        for x in x_values:
-            y = x ** b
-            row.append(y)
-        results.append(row)
-    return results
-
 if __name__ == "__main__":
     x_values = list(range(10))
     b_values = [1, 2, 3]
