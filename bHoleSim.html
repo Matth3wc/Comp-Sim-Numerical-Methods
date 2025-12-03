@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schwarzschild Geodesic Simulation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #0a0a0a;
+            font-family: 'Courier New', monospace;
+        }
+        #canvas-container {
+            width: 100vw;
+            height: 100vh;
+        }
+        #controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 13px;
+            line-height: 1.8;
+            border: 1px solid rgba(74, 158, 255, 0.3);
+            backdrop-filter: blur(10px);
+            max-width: 300px;
+            max-height: 85vh;
+            overflow-y: auto;
+            transition: transform 0.3s ease;
+        }
+        #controls.hidden {
+            transform: translateX(-340px);
+        }
+        #controls h3 {
+            margin: 0 0 15px 0;
+            color: #4a9eff;
+            font-size: 16px;
+            text-shadow: 0 0 10px rgba(74, 158, 255, 0.5);
+        }
+        .control-section {
+            margin: 12px 0;
+            padding: 10px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .control-section:first-child {
+            border-top: none;
+            padding-top: 0;
+        }
+        .toggle-btn {
+            background: linear-gradient(135deg, #4a9eff, #6b5fff);
+            border: none;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 5px 5px 5px 0;
+            font-size: 12px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 10px rgba(74, 158, 255, 0.3);
+            display: inline-block;
+        }
+        .toggle-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(74, 158, 255, 0.5);
+        }
+        .toggle-btn.active {
+            background: linear-gradient(135deg, #ff6b6b, #ff5252);
+        }
+        label {
+            display: block;
+            margin: 8px 0 4px 0;
+            color: #aaa;
+            font-size: 11px;
+        }
+        input[type="range"] {
+            width: 100%;
+            margin: 5px 0;
+        }
+        .value-display {
+            color: #4a9eff;
+            font-weight: bold;
+        }
+        #menuToggle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, #4a9eff, #6b5fff);
+            border: none;
+            color: #fff;
+            padding: 12px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            box-shadow: 0 2px 10px rgba(74, 158, 255, 0.5);
+            z-index: 1000;
+            transition: all 0.3s;
+        }
+        #menuToggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(74, 158, 255, 0.7);
+        }
+        #info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 11px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 12px;
+            border-radius: 6px;
+            max-width: 200px;
+        }
+        #stats {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 11px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 12px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+        }
+        .stat-line {
+            margin: 4px 0;
+        }
+        .stat-value {
+            color: #4a9eff;
+            font-weight: bold;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+        .pulsing {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <button id="menuToggle">☰</button>
+    
+    <div id="controls">
+        <h3>⚫ Schwarzschild Geodesics</h3>
+        
+        <div class="control-section">
+            <button class="toggle-btn" id="gridToggle">Grid ON</button>
+            <button class="toggle-btn" id="raysToggle">Rays ON</button>
+            <button class="toggle-btn" id="objectsToggle">Objects ON</button>
+        </div>
+        
+        <div class="control-section">
+            <button class="toggle-btn" id="accretionToggle">Accretion Disk</button>
+            <button class="toggle-btn" id="jetsToggle">Jets</button>
+            <button class="toggle-btn" id="hawkingToggle">Hawking Radiation</button>
+        </div>
+        
+        <div class="control-section">
+            <button class="toggle-btn" id="secondBHToggle">Add 2nd Black Hole</button>
+            <button class="toggle-btn" id="wavesToggle">Grav Waves</button>
+        </div>
+        
+        <div class="control-section">
+            <label>Light Ray Density: <span class="value-display" id="rayDensity">25</span></label>
+            <input type="range" id="raySlider" min="10" max="60" value="25" step="5">
+            
+            <label>Schwarzschild Radius: <span class="value-display" id="rsValue">2.0</span></label>
+            <input type="range" id="rsSlider" min="1" max="5" value="2" step="0.5">
+            
+            <label>Time Speed: <span class="value-display" id="timeSpeed">1.0x</span></label>
+            <input type="range" id="timeSlider" min="0.1" max="3" value="1" step="0.1">
+            
+            <label>Black Hole Spin: <span class="value-display" id="spinValue">0.0</span></label>
+            <input type="range" id="spinSlider" min="0" max="0.99" value="0" step="0.01">
+        </div>
+        
+        <div class="control-section">
+            <button class="toggle-btn" id="resetBtn">Reset Objects</button>
+            <button class="toggle-btn" id="pauseBtn">Pause</button>
+        </div>
+    </div>
+    
+    <div id="stats">
+        <div class="stat-line">FPS: <span class="stat-value" id="fps">60</span></div>
+        <div class="stat-line">Active Rays: <span class="stat-value" id="rayCount">0</span></div>
+        <div class="stat-line">Active Objects: <span class="stat-value" id="objCount">0</span></div>
+        <div class="stat-line">Black Holes: <span class="stat-value" id="bhCount">1</span></div>
+        <div class="stat-line">Sim Time: <span class="stat-value" id="simTime">0.0s</span></div>
+    </div>
+    
+    <div id="info">
+        <div><strong>Controls:</strong></div>
+        <div>Left Drag: Rotate</div>
+        <div>Scroll: Zoom</div>
+        <div>Right Drag: Pan</div>
+        <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.2);">
+            <strong>Schwarzschild Black Hole</strong><br>
+            Non-rotating solution to Einstein's field equations
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Scene setup
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setClearColor(0x0a0a0a);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        camera.position.set(0, 15, 25);
+        camera.lookAt(0, 0, 0);
+
+        // Lighting
+        const ambientLight = new THREE.AmbientLight(0x404040, 0.5);
+        scene.add(ambientLight);
+        const pointLight = new THREE.PointLight(0xffffff, 1, 100);
+        pointLight.position.set(10, 10, 10);
+        scene.add(pointLight);
+
+        // Starfield
+        const starsGeometry = new THREE.BufferGeometry();
+        const starVertices = [];
+        for (let i = 0; i < 8000; i++) {
+            const x = (Math.random() - 0.5) * 1000;
+            const y = (Math.random() - 0.5) * 1000;
+            const z = (Math.random() - 0.5) * 1000;
+            starVertices.push(x, y, z);
+        }
+        starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starVertices, 3));
+        const starsMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: 0.8 });
+        const stars = new THREE.Points(starsGeometry, starsMaterial);
+        scene.add(stars);
+
+        // Simulation state
+        let timeScale = 1.0;
+        let paused = false;
+        let simTime = 0;
+        let schwarzschildRadius = 2.0;
+        let bhSpin = 0.0;
+
+        // ============ BLACK HOLES ============
+        const blackHoles = [];
+        
+        function createBlackHole(position, radius) {
+            const group = new THREE.Group();
+            
+            const geometry = new THREE.SphereGeometry(radius, 64, 64);
+            const material = new THREE.MeshBasicMaterial({ color: 0x000000 });
+            const sphere = new THREE.Mesh(geometry, material);
+            group.add(sphere);
+            
+            const glowGeometry = new THREE.SphereGeometry(radius * 1.5, 32, 32);
+            const glowMaterial = new THREE.MeshBasicMaterial({ 
+                color: 0xff4400,
+                transparent: true,
+                opacity: 0.2,
+                side: THREE.BackSide
+            });
+            const glow = new THREE.Mesh(glowGeometry, glowMaterial);
+            group.add(glow);
+            
+            // Add photon sphere ring
+            const ringGeometry = new THREE.TorusGeometry(radius * 1.5, 0.05, 16, 100);
+            const ringMaterial = new THREE.MeshBasicMaterial({ 
+                color: 0xffaa00,
+                transparent: true,
+                opacity: 0.6
+            });
+            const ring = new THREE.Mesh(ringGeometry, ringMaterial);
+            ring.rotation.x = Math.PI / 2;
+            group.add(ring);
+            
+            group.position.copy(position);
+            scene.add(group);
+            
+            return {
+                group: group,
+                position: position.clone(),
+                radius: radius,
+                mass: radius / 2,
+                velocity: new THREE.Vector3(0, 0, 0),
+                angularVelocity: 0
+            };
+        }
+        
+        const bh1 = createBlackHole(new THREE.Vector3(0, 0, 0), schwarzschildRadius);
+        blackHoles.push(bh1);
+        
+        let secondBlackHoleActive = false;
+        let bh2 = null;
+
+        // ============ SPACETIME GRID ============
+        const gridSize = 35;
+        const gridDivisions = 45;
+        const gridGroup = new THREE.Group();
+        let gridVisible = true;
+        
+        function calculateCurvature(x, z) {
+            let totalCurvature = 0;
+            blackHoles.forEach(bh => {
+                const dx = x - bh.position.x;
+                const dz = z - bh.position.z;
+                const distance = Math.sqrt(dx * dx + dz * dz);
+                if (distance < bh.radius * 0.5) {
+                    totalCurvature += -15;
+                } else {
+                    totalCurvature += -bh.mass * 5 / (distance + 0.2);
+                }
+            });
+            return Math.max(totalCurvature, -15);
+        }
+        
+        function updateGrid() {
+            gridGroup.children.forEach(child => {
+                if (child.geometry) child.geometry.dispose();
+                if (child.material) child.material.dispose();
+            });
+            gridGroup.children = [];
+            
+            for (let i = 0; i <= gridDivisions; i++) {
+                const z = (i / gridDivisions - 0.5) * gridSize;
+                const points = [];
+                for (let j = 0; j <= gridDivisions; j++) {
+                    const x = (j / gridDivisions - 0.5) * gridSize;
+                    const y = calculateCurvature(x, z);
+                    points.push(new THREE.Vector3(x, y, z));
+                }
+                const geometry = new THREE.BufferGeometry().setFromPoints(points);
+                const material = new THREE.LineBasicMaterial({ 
+                    color: 0x00aaff,
+                    transparent: true,
+                    opacity: 0.5
+                });
+                gridGroup.add(new THREE.Line(geometry, material));
+            }
+            
+            for (let j = 0; j <= gridDivisions; j++) {
+                const x = (j / gridDivisions - 0.5) * gridSize;
+                const points = [];
+                for (let i = 0; i <= gridDivisions; i++) {
+                    const z = (i / gridDivisions - 0.5) * gridSize;
+                    const y = calculateCurvature(x, z);
+                    points.push(new THREE.Vector3(x, y, z));
+                }
+                const geometry = new THREE.BufferGeometry().setFromPoints(points);
+                const material = new THREE.LineBasicMaterial({ 
+                    color: 0x00aaff,
+                    transparent: true,
+                    opacity: 0.5
+                });
+                gridGroup.add(new THREE.Line(geometry, material));
+            }
+        }
+        
+        updateGrid();
+        scene.add(gridGroup);
+
+        // ============ LIGHT RAYS (Continuous) ============
+        const lightRays = [];
+        let rayDensity = 25;
+        let raysVisible = true;
+        const raySpawnTimer = { current: 0, interval: 0.1 };
+        
+        function spawnLightRay(y, z) {
+            const startPos = new THREE.Vector3(-30, y, z);
+            const direction = new THREE.Vector3(1, 0, 0).normalize();
+            
+            const ray = {
+                position: startPos.clone(),
+                direction: direction.clone(),
+                velocity: direction.clone().multiplyScalar(0.5),
+                path: [startPos.clone()],
+                active: true,
+                absorbed: false,
+                color: new THREE.Color(1, 1, 0.3)
+            };
+            
+            const geometry = new THREE.BufferGeometry();
+            const material = new THREE.LineBasicMaterial({ 
+                color: ray.color,
+                transparent: true,
+                opacity: 0.7
+            });
+            ray.geometry = geometry;
+            ray.material = material;
+            ray.line = new THREE.Line(geometry, material);
+            scene.add(ray.line);
+            
+            lightRays.push(ray);
+        }
+
+        // ============ ACCRETION DISK ============
+        let accretionVisible = false;
+        const accretionParticles = [];
+        const accretionGroup = new THREE.Group();
+        
+        function createAccretionDisk() {
+            for (let i = 0; i < 2000; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const radius = 3 + Math.random() * 4;
+                const x = Math.cos(angle) * radius;
+                const z = Math.sin(angle) * radius;
+                const y = (Math.random() - 0.5) * 0.3;
+                
+                const geometry = new THREE.SphereGeometry(0.04, 6, 6);
+                const temp = 1 - (radius - 3) / 4;
+                const color = new THREE.Color().setHSL(0.05 + temp * 0.1, 1, 0.4 + temp * 0.4);
+                const material = new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.8 });
+                const particle = new THREE.Mesh(geometry, material);
+                particle.position.set(x, y, z);
+                
+                accretionParticles.push({
+                    mesh: particle,
+                    angle: angle,
+                    radius: radius,
+                    speed: 0.5 / radius
+                });
+                accretionGroup.add(particle);
+            }
+        }
+        
+        createAccretionDisk();
+        scene.add(accretionGroup);
+        accretionGroup.visible = false;
+
+        // ============ JETS ============
+        let jetsVisible = false;
+        const jets = new THREE.Group();
+        
+        function createJets() {
+            const jetGeometry = new THREE.CylinderGeometry(0.15, 0.4, 20, 16);
+            const jetMaterial = new THREE.MeshBasicMaterial({ 
+                color: 0x88ccff,
+                transparent: true,
+                opacity: 0.5
+            });
+            const jetTop = new THREE.Mesh(jetGeometry, jetMaterial);
+            jetTop.position.y = 10;
+            const jetBottom = new THREE.Mesh(jetGeometry, jetMaterial);
+            jetBottom.position.y = -10;
+            jets.add(jetTop);
+            jets.add(jetBottom);
+        }
+        
+        createJets();
+        scene.add(jets);
+        jets.visible = false;
+
+        // ============ HAWKING RADIATION ============
+        let hawkingVisible = false;
+        const hawkingParticles = [];
+        
+        function spawnHawkingParticle() {
+            if (!hawkingVisible) return;
+            
+            const theta = Math.random() * Math.PI * 2;
+            const phi = Math.random() * Math.PI;
+            const r = schwarzschildRadius * 1.05;
+            
+            const x = r * Math.sin(phi) * Math.cos(theta);
+            const y = r * Math.sin(phi) * Math.sin(theta);
+            const z = r * Math.cos(phi);
+            
+            const geometry = new THREE.SphereGeometry(0.05, 8, 8);
+            const material = new THREE.MeshBasicMaterial({ 
+                color: new THREE.Color().setHSL(Math.random() * 0.1 + 0.5, 1, 0.7),
+                transparent: true,
+                opacity: 0.8
+            });
+            const particle = new THREE.Mesh(geometry, material);
+            particle.position.set(x, y, z);
+            
+            const velocity = new THREE.Vector3(x, y, z).normalize().multiplyScalar(0.1);
+            
+            hawkingParticles.push({
+                mesh: particle,
+                velocity: velocity,
+                life: 3.0
+            });
+            
+            scene.add(particle);
+        }
+
+        // ============ GRAVITATIONAL WAVES ============
+        let wavesVisible = false;
+        const waveRings = [];
+        
+        function createWaveRing() {
+            if (!wavesVisible || !secondBlackHoleActive) return;
+            
+            const center = new THREE.Vector3()
+                .addScaledVector(bh1.position, 0.5)
+                .addScaledVector(bh2.position, 0.5);
+            
+            const ringGeometry = new THREE.TorusGeometry(0.5, 0.05, 8, 32);
+            const ringMaterial = new THREE.MeshBasicMaterial({ 
+                color: 0x00ff88,
+                transparent: true,
+                opacity: 0.8
+            });
+            const ring = new THREE.Mesh(ringGeometry, ringMaterial);
+            ring.position.copy(center);
+            ring.rotation.x = Math.PI / 2;
+            
+            waveRings.push({
+                mesh: ring,
+                radius: 0.5,
+                maxRadius: 20,
+                speed: 2
+            });
+            
+            scene.add(ring);
+        }
+
+        // ============ TEST OBJECTS ============
+        const testObjects = [];
+        let objectsVisible = true;
+        
+        function createTestObjects() {
+            testObjects.forEach(obj => {
+                scene.remove(obj.mesh);
+                obj.geometry.dispose();
+                obj.material.dispose();
+                if (obj.trailLine) {
+                    scene.remove(obj.trailLine);
+                    obj.trailGeometry.dispose();
+                    obj.trailMaterial.dispose();
+                }
+            });
+            testObjects.length = 0;
+            
+            const positions = [
+                new THREE.Vector3(10, 0, 10),
+                new THREE.Vector3(-10, 0, 10),
+                new THREE.Vector3(10, 0, -10),
+                new THREE.Vector3(-10, 0, -10),
+                new THREE.Vector3(12, 0, 0),
+                new THREE.Vector3(0, 0, 12),
+                new THREE.Vector3(-12, 0, 0),
+                new THREE.Vector3(0, 0, -12)
+            ];
+            
+            positions.forEach((pos, idx) => {
+                const geometry = new THREE.SphereGeometry(0.3, 16, 16);
+                const color = new THREE.Color().setHSL(idx / positions.length, 1, 0.5);
+                const material = new THREE.MeshBasicMaterial({ color });
+                const mesh = new THREE.Mesh(geometry, material);
+                mesh.position.copy(pos);
+                scene.add(mesh);
+                
+                const r = pos.length();
+                const toCenter = pos.clone().normalize().multiplyScalar(-1);
+                const tangent = new THREE.Vector3(-toCenter.z, 0, toCenter.x).normalize();
+                const orbitalSpeed = Math.sqrt(bh1.mass / r) * 0.7;
+                const velocity = tangent.multiplyScalar(orbitalSpeed);
+                
+                const trailGeometry = new THREE.BufferGeometry();
+                const trailMaterial = new THREE.LineBasicMaterial({ 
+                    color,
+                    transparent: true,
+                    opacity: 0.4
+                });
+                const trailLine = new THREE.Line(trailGeometry, trailMaterial);
+                scene.add(trailLine);
+                
+                testObjects.push({
+                    mesh, geometry, material,
+                    position: pos.clone(),
+                    velocity: velocity,
+                    trail: [pos.clone()],
+                    active: true,
+                    trailLine, trailGeometry, trailMaterial
+                });
+            });
+        }
+        
+        createTestObjects();
+
+        // ============ PHYSICS ============
+        function schwarzschildAcceleration(pos, vel, bh) {
+            const r = pos.distanceTo(bh.position);
+            const rs = bh.radius;
+            if (r < rs * 0.5) return new THREE.Vector3(0, 0, 0);
+            
+            const toCenter = new THREE.Vector3().subVectors(bh.position, pos).normalize();
+            const gravAccel = toCenter.multiplyScalar(bh.mass / (r * r));
+            
+            // Frame dragging effect for spinning black holes
+            if (bhSpin > 0) {
+                const tangent = new THREE.Vector3(-toCenter.z, 0, toCenter.x);
+                const dragEffect = tangent.multiplyScalar(bhSpin * bh.mass / (r * r * r));
+                gravAccel.add(dragEffect);
+            }
+            
+            const relativistic = 1 + (1.5 * rs / r);
+            gravAccel.multiplyScalar(relativistic);
+            return gravAccel;
+        }
+        
+        function updateLightRayGeodesic(ray, dt) {
+            if (!ray.active) return;
+            
+            let totalAccel = new THREE.Vector3(0, 0, 0);
+            
+            blackHoles.forEach(bh => {
+                const r = ray.position.distanceTo(bh.position);
+                const rs = bh.radius;
+                
+                if (r < rs) {
+                    ray.absorbed = true;
+                    ray.active = false;
+                    ray.color.setRGB(0, 0, 0);
+                    ray.material.color = ray.color;
+                    return;
+                }
+                
+                const toCenter = new THREE.Vector3().subVectors(bh.position, ray.position);
+                const distance = toCenter.length();
+                toCenter.normalize();
+                
+                const deflection = (2 * bh.mass) / (distance * distance);
+                const bendingForce = toCenter.multiplyScalar(deflection);
+                
+                if (distance < rs * 2.5) {
+                    const photonSphereEffect = Math.exp(-(distance - rs) / rs);
+                    bendingForce.multiplyScalar(1 + photonSphereEffect * 3);
+                }
+                
+                totalAccel.add(bendingForce);
+            });
+            
+            ray.velocity.add(totalAccel.multiplyScalar(dt));
+            ray.velocity.normalize().multiplyScalar(0.5);
+            ray.position.add(ray.velocity.clone().multiplyScalar(dt * 8));
+            
+            ray.path.push(ray.position.clone());
+            if (ray.path.length > 300) ray.path.shift();
+            
+            ray.geometry.setFromPoints(ray.path);
+            
+            // Deactivate if ray exits scene
+            if (Math.abs(ray.position.x) > 40 || Math.abs(ray.position.y) > 40 || Math.abs(ray.position.z) > 40) {
+                ray.active = false;
+            }
+        }
+        
+        function updateObjectGeodesic(obj, dt) {
+            if (!obj.active) return;
+            
+            let totalAccel = new THREE.Vector3(0, 0, 0);
+            
+            blackHoles.forEach(bh => {
+                const r = obj.position.distanceTo(bh.position);
+                if (r < bh.radius) {
+                    obj.active = false;
+                    obj.mesh.visible = false;
+                    return;
+                }
+                const accel = schwarzschildAcceleration(obj.position, obj.velocity, bh);
+                totalAccel.add(accel);
+            });
+            
+            obj.velocity.add(totalAccel.multiplyScalar(dt));
+            obj.position.add(obj.velocity.clone().multiplyScalar(dt));
+            obj.mesh.position.copy(obj.position);
+            
+            obj.trail.push(obj.position.clone());
+            if (obj.trail.length > 250) obj.trail.shift();
+            obj.trailGeometry.setFromPoints(obj.trail);
+        }
+
+        function updateBlackHoles(dt) {
+            if (blackHoles.length !== 2) return;
+            
+            const bh1 = blackHoles[0];
+            const bh2 = blackHoles[1];
+            
+            const toOther = new THREE.Vector3().subVectors(bh2.position, bh1.position);
+            const distance = toOther.length();
+            toOther.normalize();
+            
+            const force = toOther.multiplyScalar(bh2.mass / (distance * distance));
+            bh1.velocity.add(force.multiplyScalar(dt * 0.5));
+            bh2.velocity.add(force.multiplyScalar(-dt * 0.5));
+            
+            bh1.position.add(bh1.velocity.clone().multiplyScalar(dt));
+            bh2.position.add(bh2.velocity.clone().multiplyScalar(dt));
+            bh1.group.position.copy(bh1.position);
+            bh2.group.position.copy(bh2.position);
+            
+            // Emit gravitational waves
+            if (wavesVisible && Math.random() < 0.05) {
+                createWaveRing();
+            }
+            
+            if (distance < (bh1.radius + bh2.radius) * 1.3) {
+                const totalMass = bh1.mass + bh2.mass;
+                const newRadius = totalMass * 2;
+                const centerOfMass = new THREE.Vector3()
+                    .addScaledVector(bh1.position, bh1.mass)
+                    .addScaledVector(bh2.position, bh2.mass)
+                    .divideScalar(totalMass);
+                
+                scene.remove(bh1.group);
+                scene.remove(bh2.group);
+                blackHoles.length = 0;
+                
+                const merged = createBlackHole(centerOfMass, newRadius);
+                blackHoles.push(merged);
+                schwarzschildRadius = newRadius;
+                
+                secondBlackHoleActive = false;
+                document.getElementById('secondBHToggle').textContent = 'Add 2nd Black Hole';
+                document.getElementById('secondBHToggle').classList.remove('active');
+                updateGrid();
+            }
+        }
+
+        // ============ CONTROLS ============
+        let menuVisible = true;
+        
+        document.getElementById('menuToggle').addEventListener('click', () => {
+            menuVisible = !menuVisible;
+            const controls = document.getElementById('controls');
+            controls.classList.toggle('hidden');
+        });
+
+        document.getElementById('gridToggle').addEventListener('click', function() {
+            gridVisible = !gridVisible;
+            gridGroup.visible = gridVisible;
+            this.textContent = gridVisible ? 'Grid ON' : 'Grid OFF';
+        });
+
+        document.getElementById('raysToggle').addEventListener('click', function() {
+            raysVisible = !raysVisible;
+            lightRays.forEach(ray => ray.line.visible = raysVisible);
+            this.textContent = raysVisible ? 'Rays ON' : 'Rays OFF';
+        });
+
+        document.getElementById('objectsToggle').addEventListener('click', function() {
+            objectsVisible = !objectsVisible;
+            testObjects.forEach(obj => {
+                obj.mesh.visible = objectsVisible && obj.active;
+                obj.trailLine.visible = objectsVisible;
+            });
+            this.textContent = objectsVisible ? 'Objects ON' : 'Objects OFF';
+        });
+
+        document.getElementById('accretionToggle').addEventListener('click', function() {
+            accretionVisible = !accretionVisible;
+            accretionGroup.visible = accretionVisible;
+            this.textContent = accretionVisible ? 'Accretion ON' : 'Accretion Disk';
+            this.classList.toggle('active');
+        });
+
+        document.getElementById('jetsToggle').addEventListener('click', function() {
+            jetsVisible = !jetsVisible;
+            jets.visible = jetsVisible;
+            this.textContent = jetsVisible ? 'Jets ON' : 'Jets';
+            this.classList.toggle('active');
+        });
+
+        document.getElementById('hawkingToggle').addEventListener('click', function() {
+            hawkingVisible = !hawkingVisible;
+            this.textContent = hawkingVisible ? 'Hawking ON' : 'Hawking Radiation';
+            this.classList.toggle('active');
+        });
+
+        document.getElementById('wavesToggle').addEventListener('click', function() {
+            wavesVisible = !wavesVisible;
+            this.textContent = wavesVisible ? 'Waves ON' : 'Grav Waves';
+            this.classList.toggle('active');
+        });
+
+        document.getElementById('secondBHToggle').addEventListener('click', function() {
+            if (!secondBlackHoleActive) {
+                bh2 = createBlackHole(new THREE.Vector3(6, 0, 0), schwarzschildRadius);
+                bh2.velocity.set(0, 0, 0.4);
+                bh1.velocity.set(0, 0, -0.4);
+                blackHoles.push(bh2);
+                secondBlackHoleActive = true;
+                this.textContent = 'Remove 2nd BH';
+                this.classList.add('active');
+                updateGrid();
+            } else {
+                scene.remove(bh2.group);
+                blackHoles.splice(1, 1);
+                bh1.velocity.set(0, 0, 0);
+                secondBlackHoleActive = false;
+                this.textContent = 'Add 2nd Black Hole';
+                this.classList.remove('active');
+                updateGrid();
+            }
+        });
+
+        document.getElementById('raySlider').addEventListener('input', function() {
+            rayDensity = parseInt(this.value);
+            document.getElementById('rayDensity').textContent = rayDensity;
+        });
+
+        document.getElementById('rsSlider').addEventListener('input', function() {
+            schwarzschildRadius = parseFloat(this.value);
+            document.getElementById('rsValue').textContent = schwarzschildRadius.toFixed(1);
+            blackHoles.forEach(bh => {
+                bh.radius = schwarzschildRadius;
+                bh.mass = schwarzschildRadius / 2;
+                scene.remove(bh.group);
+                const newBH = createBlackHole(bh.position, schwarzschildRadius);
+                newBH.velocity.copy(bh.velocity);
+                Object.assign(bh, newBH);
+            });
+            updateGrid();
+        });
+
+        document.getElementById('timeSlider').addEventListener('input', function() {
+            timeScale = parseFloat(this.value);
+            document.getElementById('timeSpeed').textContent = timeScale.toFixed(1) + 'x';
+        });
+
+        document.getElementById('spinSlider').addEventListener('input', function() {
+            bhSpin = parseFloat(this.value);
+            document.getElementById('spinValue').textContent = bhSpin.toFixed(2);
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            createTestObjects();
+        });
+
+        document.getElementById('pauseBtn').addEventListener('click', function() {
+            paused = !paused;
+            this.textContent = paused ? 'Resume' : 'Pause';
+            this.classList.toggle('active');
+        });
+
+        // Mouse controls
+        let isDragging = false;
+        let isRightDragging = false;
+        let previousMousePosition = { x: 0, y: 0 };
+        let cameraRotation = { x: 0.4, y: 0 };
+        let cameraDistance = 25;
+        const cameraTarget = new THREE.Vector3(0, 0, 0);
+
+        renderer.domElement.addEventListener('mousedown', (e) => {
+            if (e.button === 0) isDragging = true;
+            else if (e.button === 2) isRightDragging = true;
+            previousMousePosition = { x: e.clientX, y: e.clientY };
+        });
+
+        renderer.domElement.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const deltaX = e.clientX - previousMousePosition.x;
+                const deltaY = e.clientY - previousMousePosition.y;
+                cameraRotation.y += deltaX * 0.005;
+                cameraRotation.x += deltaY * 0.005;
+                cameraRotation.x = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, cameraRotation.x));
+            } else if (isRightDragging) {
+                const deltaX = e.clientX - previousMousePosition.x;
+                const deltaY = e.clientY - previousMousePosition.y;
+                const right = new THREE.Vector3();
+                const up = new THREE.Vector3(0, 1, 0);
+                camera.getWorldDirection(right);
+                right.cross(up).normalize();
+                cameraTarget.add(right.multiplyScalar(-deltaX * 0.02));
+                cameraTarget.y += deltaY * 0.02;
+            }
+            previousMousePosition = { x: e.clientX, y: e.clientY };
+        });
+
+        renderer.domElement.addEventListener('mouseup', () => {
+            isDragging = false;
+            isRightDragging = false;
+        });
+
+        renderer.domElement.addEventListener('contextmenu', (e) => e.preventDefault());
+
+        renderer.domElement.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            cameraDistance += e.deltaY * 0.02;
+            cameraDistance = Math.max(5, Math.min(60, cameraDistance));
+        });
+
+        // Animation loop
+        const clock = new THREE.Clock();
+        let lastTime = 0;
+        let frameCount = 0;
+        let lastFPSUpdate = 0;
+        
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            const currentTime = clock.getElapsedTime();
+            const dt = Math.min((currentTime - lastTime) * timeScale, 0.05);
+            lastTime = currentTime;
+            
+            if (!paused) {
+                simTime += dt;
+                
+                // Spawn light rays continuously
+                raySpawnTimer.current += dt;
+                if (raySpawnTimer.current >= raySpawnTimer.interval && raysVisible) {
+                    const spacing = 25 / rayDensity;
+                    for (let i = -rayDensity / 2; i < rayDensity / 2; i++) {
+                        for (let j = -rayDensity / 2; j < rayDensity / 2; j++) {
+                            if (Math.random() < 0.1) {
+                                spawnLightRay(i * spacing, j * spacing);
+                            }
+                        }
+                    }
+                    raySpawnTimer.current = 0;
+                }
+                
+                // Update light rays
+                lightRays.forEach((ray, idx) => {
+                    if (ray.active) {
+                        updateLightRayGeodesic(ray, dt);
+                    } else if (!ray.absorbed && ray.path.length > 0) {
+                        // Remove inactive rays
+                        scene.remove(ray.line);
+                        ray.geometry.dispose();
+                        ray.material.dispose();
+                        lightRays.splice(idx, 1);
+                    }
+                });
+                
+                // Update test objects
+                testObjects.forEach(obj => {
+                    if (obj.active && objectsVisible) {
+                        updateObjectGeodesic(obj, dt);
+                    }
+                });
+                
+                // Update black holes
+                if (secondBlackHoleActive) {
+                    updateBlackHoles(dt);
+                }
+                
+                // Update accretion disk
+                if (accretionVisible) {
+                    accretionParticles.forEach(p => {
+                        p.angle += p.speed * dt;
+                        p.mesh.position.x = Math.cos(p.angle) * p.radius;
+                        p.mesh.position.z = Math.sin(p.angle) * p.radius;
+                    });
+                }
+                
+                // Update jets
+                if (jetsVisible) {
+                    jets.rotation.y += dt * 0.5;
+                }
+                
+                // Spawn and update Hawking radiation
+                if (hawkingVisible && Math.random() < 0.3) {
+                    spawnHawkingParticle();
+                }
+                
+                hawkingParticles.forEach((p, idx) => {
+                    p.life -= dt;
+                    if (p.life <= 0) {
+                        scene.remove(p.mesh);
+                        p.mesh.geometry.dispose();
+                        p.mesh.material.dispose();
+                        hawkingParticles.splice(idx, 1);
+                    } else {
+                        p.mesh.position.add(p.velocity.clone().multiplyScalar(dt));
+                        p.mesh.material.opacity = p.life / 3.0;
+                    }
+                });
+                
+                // Update gravitational waves
+                waveRings.forEach((wave, idx) => {
+                    wave.radius += wave.speed * dt;
+                    wave.mesh.scale.set(wave.radius, wave.radius, wave.radius);
+                    wave.mesh.material.opacity = Math.max(0, 1 - wave.radius / wave.maxRadius);
+                    
+                    if (wave.radius > wave.maxRadius) {
+                        scene.remove(wave.mesh);
+                        wave.mesh.geometry.dispose();
+                        wave.mesh.material.dispose();
+                        waveRings.splice(idx, 1);
+                    }
+                });
+                
+                // Animate black hole effects
+                blackHoles.forEach(bh => {
+                    bh.group.children[1].material.opacity = 0.15 + Math.sin(currentTime * 2) * 0.08;
+                    bh.group.children[2].rotation.z = currentTime * (0.5 + bhSpin);
+                    bh.group.rotation.y += bhSpin * dt;
+                });
+            }
+
+            // Update camera
+            camera.position.x = cameraTarget.x + Math.sin(cameraRotation.y) * Math.cos(cameraRotation.x) * cameraDistance;
+            camera.position.y = cameraTarget.y + Math.sin(cameraRotation.x) * cameraDistance;
+            camera.position.z = cameraTarget.z + Math.cos(cameraRotation.y) * Math.cos(cameraRotation.x) * cameraDistance;
+            camera.lookAt(cameraTarget);
+
+            // Update stats
+            frameCount++;
+            if (currentTime - lastFPSUpdate > 0.5) {
+                const fps = Math.round(frameCount / (currentTime - lastFPSUpdate));
+                document.getElementById('fps').textContent = fps;
+                frameCount = 0;
+                lastFPSUpdate = currentTime;
+            }
+            
+            document.getElementById('rayCount').textContent = lightRays.filter(r => r.active).length;
+            document.getElementById('objCount').textContent = testObjects.filter(o => o.active).length;
+            document.getElementById('bhCount').textContent = blackHoles.length;
+            document.getElementById('simTime').textContent = simTime.toFixed(1) + 's';
+
+            renderer.render(scene, camera);
+        }
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        animate();
+    </script>
+</body>
+</html>
