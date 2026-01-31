@@ -23,7 +23,7 @@ class Data:
     
     # Constants
     g = 9.81
-    chi_mohrs = 3.2e-5
+    chi_mohrs = 3.2e-5  # Volume susceptibility (SI, dimensionless)
     mohrs_mass = 73.9e-6
     ggg_mass = 24.4e-6
     haematite_mass = 22.2e-6
