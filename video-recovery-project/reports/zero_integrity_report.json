@@ -1,0 +1,243 @@
+{
+  "summary": {
+    "total_files": 26,
+    "all_zero_files": 25,
+    "nonzero_files": 1
+  },
+  "files": [
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+      "size_bytes": 40504816,
+      "nonzero_bytes": 243880,
+      "nonzero_ratio": 0.006021012414918759,
+      "all_zero": false,
+      "jpeg_soi_count": 12,
+      "jpeg_eoi_count": 11
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0032.AVI",
+      "size_bytes": 162094824,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0033.AVI",
+      "size_bytes": 1731748,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0034.AVI",
+      "size_bytes": 19260580,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0035.AVI",
+      "size_bytes": 46549660,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0036.AVI",
+      "size_bytes": 48930212,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0037.AVI",
+      "size_bytes": 26802316,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0038.AVI",
+      "size_bytes": 33665628,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0039.AVI",
+      "size_bytes": 1012416,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0040.AVI",
+      "size_bytes": 64876516,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0041.AVI",
+      "size_bytes": 1932668,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0042.AVI",
+      "size_bytes": 18364024,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0043.AVI",
+      "size_bytes": 8825408,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0044.AVI",
+      "size_bytes": 2399088,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0045.AVI",
+      "size_bytes": 496164,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0046.AVI",
+      "size_bytes": 2281528,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0047.AVI",
+      "size_bytes": 5995516,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0048.AVI",
+      "size_bytes": 3240404,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0049.AVI",
+      "size_bytes": 2397752,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0050.AVI",
+      "size_bytes": 1588972,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0051.AVI",
+      "size_bytes": 10544228,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0052.AVI",
+      "size_bytes": 29292936,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0053.AVI",
+      "size_bytes": 641156,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0054.AVI",
+      "size_bytes": 5609416,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0055.AVI",
+      "size_bytes": 9014760,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    },
+    {
+      "file": "/Users/matthewconway/Desktop/currupt_vids/PICT0056.AVI",
+      "size_bytes": 5675648,
+      "nonzero_bytes": 0,
+      "nonzero_ratio": 0.0,
+      "all_zero": true,
+      "jpeg_soi_count": 0,
+      "jpeg_eoi_count": 0
+    }
+  ]
+}

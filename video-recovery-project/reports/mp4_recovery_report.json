@@ -1,0 +1,184 @@
+[
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0031.mp4",
+    "recovered_mp4": true,
+    "method": "copyfix_mkv",
+    "detail_tail": "[libx264 @ 0x145008990] 8x8 transform intra:93.0% inter:62.1%\n[libx264 @ 0x145008990] coded y,uvDC,uvAC intra: 98.4% 96.2% 60.3% inter: 78.7% 99.6% 46.7%\n[libx264 @ 0x145008990] i16 v,h,dc,p:  0% 94%  3%  3%\n[libx264 @ 0x145008990] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 12% 11% 66%  1%  2%  2%  1%  2%  3%\n[libx264 @ 0x145008990] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 19% 15% 17%  3% 15% 12%  8%  6%  7%\n[libx264 @ 0x145008990] i8c dc,h,v,p: 53% 20% 20%  8%\n[libx264 @ 0x145008990] Weighted P-Frames: Y:0.0% UV:0.0%\n[libx264 @ 0x145008990] kb/s:5041.20"
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0032.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0032.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0033.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0033.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0034.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0034.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0035.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0035.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0036.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0036.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0037.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0037.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0038.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0038.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0039.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0039.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0040.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0040.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0041.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0041.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0042.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0042.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0043.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0043.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0044.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0044.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0045.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0045.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0046.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0046.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0047.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0047.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0048.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0048.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0049.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0049.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0050.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0050.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0051.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0051.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0052.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0052.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0053.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0053.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0054.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0054.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0055.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0055.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0056.AVI",
+    "output_mp4": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_mp4/PICT0056.mp4",
+    "recovered_mp4": false,
+    "method": "",
+    "detail_tail": ""
+  }
+]

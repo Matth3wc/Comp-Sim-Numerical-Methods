@@ -1,0 +1,2420 @@
+[
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+    "rel_path": "PICT0031.AVI",
+    "recovered": true,
+    "method": "copy_to_mkv",
+    "output_file": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0031.copyfix.mkv",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0031.copyfix.mkv",
+        "returncode": 0,
+        "stderr_tail": "Input #0, mjpeg, from '/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI':\n  Duration: N/A, bitrate: N/A\n  Stream #0:0: Video: mjpeg (Baseline), yuvj422p(pc, bt470bg/unknown/unknown), 640x480, 25 fps, 25 tbr, 1200k tbn\nStream mapping:\n  Stream #0:0 -> #0:0 (copy)\nOutput #0, matroska, to '/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0031.copyfix.mkv':\n  Metadata:\n    encoder         : Lavf61.7.100\n  Stream #0:0: Video: mjpeg (Baseline) (MJPG / 0x47504A4D), yuvj422p(pc, bt470bg/unknown/unknown), 640x480, q=2-31, 25 fps, 25 tbr, 1k tbn\nPress [q] to stop, [?] for help\n[out#0/matroska @ 0x12f706d40] video:39555KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.002543%\nframe=   12 fps=0.0 q=-1.0 Lsize=   39556KiB time=00:00:00.48 bitrate=675097.4kbits/s speed=8.77x    ",
+        "output_exists": true,
+        "output_size": 40505846,
+        "playable_by_ffprobe": true
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0032.AVI",
+    "rel_path": "PICT0032.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0032.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0032.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x1476172f0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x1476170a0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0032.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0032.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0032.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x140706120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x140705ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0032.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0032.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0032.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x123706260] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x123706010] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0032.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0032.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 162098920,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0032.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 162098408,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0032.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 162097896,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0032.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 162096872,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0032.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 162094824,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0032.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 162090728,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0033.AVI",
+    "rel_path": "PICT0033.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0033.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0033.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x14ae15750] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x14ae14300] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0033.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0033.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0033.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x13a104440] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x13a1041f0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0033.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0033.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0033.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x1340062e0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x134006090] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0033.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0033.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1735844,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0033.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1735332,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0033.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1734820,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0033.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1733796,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0033.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1731748,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0033.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1727652,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0034.AVI",
+    "rel_path": "PICT0034.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0034.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0034.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x12d006250] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x12d006000] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0034.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0034.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0034.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x158806120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x158805ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0034.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0034.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0034.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x131e04b10] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x131e048c0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0034.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0034.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 19264676,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0034.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 19264164,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0034.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 19263652,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0034.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 19262628,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0034.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 19260580,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0034.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 19256484,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0035.AVI",
+    "rel_path": "PICT0035.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0035.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0035.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x11c706c10] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x11c7069c0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0035.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0035.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0035.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x156706120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x156705ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0035.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0035.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0035.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x1466173f0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x1466171a0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0035.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0035.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 46553756,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0035.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 46553244,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0035.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 46552732,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0035.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 46551708,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0035.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 46549660,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0035.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 46545564,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0036.AVI",
+    "rel_path": "PICT0036.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0036.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0036.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x14f006120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x14f005ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0036.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0036.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0036.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x13f614a60] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x13f6142d0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0036.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0036.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0036.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x123006c60] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x123006a10] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0036.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0036.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 48934308,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0036.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 48933796,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0036.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 48933284,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0036.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 48932260,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0036.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 48930212,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0036.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 48926116,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0037.AVI",
+    "rel_path": "PICT0037.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0037.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0037.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x137f05010] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x137f04c70] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0037.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0037.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0037.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x122e16710] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x122e164c0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0037.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0037.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0037.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x133904550] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x133904300] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0037.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0037.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 26806412,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0037.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 26805900,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0037.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 26805388,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0037.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 26804364,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0037.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 26802316,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0037.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 26798220,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0038.AVI",
+    "rel_path": "PICT0038.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0038.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0038.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x124f06210] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x124f05fc0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0038.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0038.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0038.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x1576172f0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x1576170a0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0038.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0038.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0038.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x11ee173f0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x11ee171a0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0038.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0038.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 33669724,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0038.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 33669212,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0038.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 33668700,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0038.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 33667676,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0038.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 33665628,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0038.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 33661532,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0039.AVI",
+    "rel_path": "PICT0039.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0039.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0039.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x14d706120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x14d705ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0039.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0039.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0039.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x154006210] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x154005fc0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0039.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0039.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0039.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x14d0046d0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x14d004480] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0039.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0039.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1016512,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0039.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1016000,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0039.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1015488,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0039.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1014464,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0039.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1012416,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0039.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1008320,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0040.AVI",
+    "rel_path": "PICT0040.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0040.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0040.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x11f706b20] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x11f7068d0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0040.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0040.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0040.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x135706210] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x135705fc0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0040.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0040.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0040.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x123e16a50] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x123e16800] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0040.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0040.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 64880612,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0040.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 64880100,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0040.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 64879588,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0040.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 64878564,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0040.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 64876516,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0040.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 64872420,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0041.AVI",
+    "rel_path": "PICT0041.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0041.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0041.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x127f04630] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x127f043e0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0041.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0041.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0041.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x134006120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x134005ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0041.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0041.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0041.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x136e173f0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x136e171a0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0041.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0041.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1936764,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0041.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1936252,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0041.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1935740,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0041.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1934716,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0041.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1932668,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0041.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1928572,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0042.AVI",
+    "rel_path": "PICT0042.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0042.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0042.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x12080aad0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x12080a880] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0042.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0042.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0042.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x12b706ba0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x12b706950] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0042.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0042.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0042.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x135706350] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x135706100] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0042.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0042.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 18368120,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0042.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 18367608,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0042.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 18367096,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0042.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 18366072,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0042.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 18364024,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0042.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 18359928,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0043.AVI",
+    "rel_path": "PICT0043.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0043.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0043.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x13ae171c0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x13ae16f70] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0043.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0043.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0043.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x150e14d30] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x150e14a90] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0043.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0043.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0043.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x13ce17520] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x13ce172d0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0043.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0043.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 8829504,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0043.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 8828992,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0043.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 8828480,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0043.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 8827456,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0043.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 8825408,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0043.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 8821312,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0044.AVI",
+    "rel_path": "PICT0044.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0044.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0044.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x11ee171c0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x11ee16f70] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0044.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0044.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0044.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x134617150] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x134616f00] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0044.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0044.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0044.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x156e17520] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x156e172d0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0044.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0044.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2403184,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0044.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2402672,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0044.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2402160,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0044.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2401136,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0044.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2399088,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0044.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2394992,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0045.AVI",
+    "rel_path": "PICT0045.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0045.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0045.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x1376171c0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x137616f70] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0045.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0045.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0045.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x145806120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x145805ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0045.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0045.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0045.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x11d617520] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x11d6172d0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0045.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0045.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 500260,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0045.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 499748,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0045.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 499236,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0045.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 498212,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0045.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 496164,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0045.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 492068,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0046.AVI",
+    "rel_path": "PICT0046.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0046.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0046.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x156006120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x156005ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0046.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0046.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0046.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x11e6172f0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x11e6170a0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0046.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0046.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0046.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x149e173f0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x149e171a0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0046.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0046.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2285624,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0046.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2285112,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0046.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2284600,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0046.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2283576,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0046.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2281528,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0046.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2277432,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0047.AVI",
+    "rel_path": "PICT0047.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0047.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0047.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x137e171c0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x137e16f70] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0047.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0047.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0047.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x121f06120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x121f05ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0047.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0047.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0047.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x1586173f0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x1586171a0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0047.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0047.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5999612,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0047.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5999100,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0047.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5998588,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0047.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5997564,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0047.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5995516,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0047.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5991420,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0048.AVI",
+    "rel_path": "PICT0048.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0048.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0048.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x130e172f0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x130e170a0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0048.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0048.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0048.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x137f06ba0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x137f06950] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0048.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0048.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0048.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x12e806260] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x12e806010] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0048.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0048.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 3244500,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0048.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 3243988,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0048.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 3243476,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0048.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 3242452,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0048.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 3240404,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0048.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 3236308,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0049.AVI",
+    "rel_path": "PICT0049.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0049.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0049.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x157e171c0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x157e16f70] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0049.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0049.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0049.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x145006120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x145005ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0049.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0049.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0049.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x135006260] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x135006010] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0049.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0049.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2401848,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0049.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2401336,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0049.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2400824,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0049.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2399800,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0049.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2397752,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0049.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 2393656,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0050.AVI",
+    "rel_path": "PICT0050.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0050.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0050.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x156f06210] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x156f05fc0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0050.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0050.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0050.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x14f706290] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x14f706040] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0050.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0050.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0050.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x14ce173f0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x14ce171a0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0050.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0050.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1593068,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0050.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1592556,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0050.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1592044,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0050.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1591020,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0050.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1588972,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0050.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 1584876,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0051.AVI",
+    "rel_path": "PICT0051.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0051.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0051.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x12be171c0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x12be16f70] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0051.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0051.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0051.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x12d806120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x12d805ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0051.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0051.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0051.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x135706350] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x135706100] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0051.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0051.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 10548324,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0051.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 10547812,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0051.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 10547300,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0051.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 10546276,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0051.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 10544228,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0051.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 10540132,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0052.AVI",
+    "rel_path": "PICT0052.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0052.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0052.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x14a804440] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x14a8041f0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0052.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0052.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0052.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x13a6171c0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x13a616f70] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0052.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0052.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0052.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x128e17520] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x128e172d0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0052.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0052.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 29297032,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0052.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 29296520,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0052.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 29296008,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0052.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 29294984,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0052.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 29292936,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0052.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 29288840,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0053.AVI",
+    "rel_path": "PICT0053.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0053.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0053.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x151006120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x151005ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0053.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0053.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0053.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x13d806120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x13d805ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0053.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0053.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0053.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x121617520] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x1216172d0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0053.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0053.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 645252,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0053.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 644740,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0053.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 644228,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0053.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 643204,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0053.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 641156,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0053.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 637060,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0054.AVI",
+    "rel_path": "PICT0054.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0054.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0054.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x12fe17150] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x12fe16f00] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0054.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0054.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0054.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x145706120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x145705ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0054.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0054.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0054.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x11cf06260] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x11cf06010] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0054.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0054.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5613512,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0054.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5613000,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0054.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5612488,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0054.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5611464,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0054.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5609416,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0054.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5605320,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0055.AVI",
+    "rel_path": "PICT0055.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0055.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0055.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x13a704530] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x13a7042e0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0055.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0055.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0055.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x133616710] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x1336164c0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0055.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0055.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0055.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x150617520] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x1506172d0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0055.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0055.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 9018856,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0055.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 9018344,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0055.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 9017832,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0055.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 9016808,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0055.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 9014760,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0055.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 9010664,
+        "playable_by_ffprobe": false
+      }
+    ]
+  },
+  {
+    "source": "/Users/matthewconway/Desktop/currupt_vids/PICT0056.AVI",
+    "rel_path": "PICT0056.AVI",
+    "recovered": false,
+    "method": "",
+    "output_file": "",
+    "attempt_logs": [
+      {
+        "method": "copy_to_mkv",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0056.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0056.copyfix.mkv",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x14d6172f0] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x14d6170a0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0056.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "copy_to_avi",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0056.AVI -map 0 -c copy /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0056.copyfix.avi",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x135706120] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x135705ed0] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0056.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "reencode_to_mp4",
+        "command": "/Users/matthewconway/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -err_detect ignore_err -fflags +genpts+igndts -i /Users/matthewconway/Desktop/currupt_vids/PICT0056.AVI -map '0:v:0?' -map '0:a:0?' -c:v libx264 -preset veryfast -crf 21 -c:a aac -b:a 192k /Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0056.reencode.mp4",
+        "returncode": 183,
+        "stderr_tail": "  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n  libpostproc    58.  3.100 / 58.  3.100\n[avi @ 0x13c006260] Format avi detected only with low score of 1, misdetection possible!\n[in#0 @ 0x13c006010] Error opening input: Invalid data found when processing input\nError opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0056.AVI.\nError opening input files: Invalid data found when processing input",
+        "output_exists": false,
+        "output_size": 0,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 0,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0056.hdrfix.t1.s0.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5679744,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 512,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0056.hdrfix.t1.s512.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5679232,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 1024,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0056.hdrfix.t1.s1024.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5678720,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 2048,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0056.hdrfix.t1.s2048.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5677696,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 4096,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0056.hdrfix.t1.s4096.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5675648,
+        "playable_by_ffprobe": false
+      },
+      {
+        "method": "header_transplant",
+        "template": "/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI",
+        "skip_bytes": 8192,
+        "output": "/Users/matthewconway/Documents/GitHub/Comp-Sim-Numerical-Methods/video-recovery-project/recovered_output/PICT0056.hdrfix.t1.s8192.avi",
+        "built": true,
+        "output_exists": true,
+        "output_size": 5671552,
+        "playable_by_ffprobe": false
+      }
+    ]
+  }
+]

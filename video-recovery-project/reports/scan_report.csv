@@ -1,0 +1,102 @@
+file_path,rel_path,size_bytes,riff_ok,avi_sig_ok,ffprobe_ok,duration_s,nb_streams,video_streams,audio_streams,issue_class,ffprobe_error
+/Users/matthewconway/Desktop/currupt_vids/PICT0031.AVI,PICT0031.AVI,40504816,False,False,True,,1,1,0,bad_or_missing_header,
+/Users/matthewconway/Desktop/currupt_vids/PICT0032.AVI,PICT0032.AVI,162094824,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x13cf06a70] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x13cf06890] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0032.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0033.AVI,PICT0033.AVI,1731748,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x1326164b0] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x1326162d0] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0033.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0034.AVI,PICT0034.AVI,19260580,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x152f06030] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x152f05e50] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0034.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0035.AVI,PICT0035.AVI,46549660,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x1366164b0] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x1366162d0] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0035.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0036.AVI,PICT0036.AVI,48930212,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x131e17040] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x131e16e60] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0036.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0037.AVI,PICT0037.AVI,26802316,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x14ee16640] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x14ee16460] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0037.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0038.AVI,PICT0038.AVI,33665628,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x14b806a70] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x14b806890] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0038.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0039.AVI,PICT0039.AVI,1012416,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x147f06030] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x147f05e50] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0039.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0040.AVI,PICT0040.AVI,64876516,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x133706a70] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x133706890] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0040.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0041.AVI,PICT0041.AVI,1932668,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x132616f50] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x132616d70] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0041.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0042.AVI,PICT0042.AVI,18364024,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x12ff06bf0] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x12ff06a10] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0042.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0043.AVI,PICT0043.AVI,8825408,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x11ef06bf0] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x11ef06a10] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0043.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0044.AVI,PICT0044.AVI,2399088,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x12ff06030] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x12ff05e50] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0044.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0045.AVI,PICT0045.AVI,496164,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x133e164b0] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x133e162d0] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0045.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0046.AVI,PICT0046.AVI,2281528,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x156e164b0] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x156e162d0] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0046.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0047.AVI,PICT0047.AVI,5995516,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x1316164b0] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x1316162d0] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0047.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0048.AVI,PICT0048.AVI,3240404,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x128e16f50] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x128e16d70] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0048.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0049.AVI,PICT0049.AVI,2397752,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x125806030] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x125805e50] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0049.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0050.AVI,PICT0050.AVI,1588972,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x12b617040] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x12b616e60] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0050.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0051.AVI,PICT0051.AVI,10544228,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x159706bf0] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x159706a10] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0051.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0052.AVI,PICT0052.AVI,29292936,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x12e606070] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x12e605e90] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0052.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0053.AVI,PICT0053.AVI,641156,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x12b6164b0] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x12b6162d0] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0053.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0054.AVI,PICT0054.AVI,5609416,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x14ae164b0] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x14ae162d0] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0054.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0055.AVI,PICT0055.AVI,9014760,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x135617040] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x135616e60] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0055.AVI.
+Error opening input files: Invalid data found when processing input"
+/Users/matthewconway/Desktop/currupt_vids/PICT0056.AVI,PICT0056.AVI,5675648,False,False,False,,0,0,0,bad_or_missing_header,"[avi @ 0x1236164b0] Format avi detected only with low score of 1, misdetection possible!
+[in#0 @ 0x1236162d0] Error opening input: Invalid data found when processing input
+Error opening input file /Users/matthewconway/Desktop/currupt_vids/PICT0056.AVI.
+Error opening input files: Invalid data found when processing input"
